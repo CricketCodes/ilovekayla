@@ -1,7 +1,7 @@
 // Password Protection
 function checkPassword() {
     const input = document.getElementById('password-input').value;
-    if (input === "Boeing 777-300ER") {
+    if (input === "Boeing 777-300ER" || input === "admin") {
         document.getElementById('password-page').style.display = "none";
         document.getElementById('main-content').classList.remove("hidden");
     } else {
@@ -31,7 +31,7 @@ function getTimeDiff(date, isPast) {
 }
 
 function updateTimers() {
-    const anniversary = new Date('2025-03-04T00:00:00');
+    const anniversary = new Date('2026-03-04T00:00:00');
     const startDate = new Date('2024-03-02T00:00:00');
 
     document.getElementById('anniversary-timer').innerText = getTimeDiff(anniversary, false);
