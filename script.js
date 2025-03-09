@@ -42,15 +42,15 @@ setInterval(updateTimers, 1000);
 // Modal & Memories
 const memories = [
     {
-        text: "Our first date was unforgettable. I still remember how nervous I was! 💕",
+        text: "x",
         images: ["date1-1.jpg", "date1-2.jpg", "date1-3.jpg"]
     },
     {
-        text: "The beach date at sunset was magical. I loved holding your hand. 🌅",
+        text: "x",
         images: ["beach1.jpg", "beach2.jpg", "beach3.jpg"]
     },
     {
-        text: "The carnival was amazing! Our favorite ride was the Ferris Wheel. 🎡",
+        text: "x",
         images: ["carnival1.jpg", "carnival2.jpg", "carnival3.jpg"]
     }
 ];
