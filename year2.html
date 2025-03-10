@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .memories {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adds space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        if (sessionStorage.getItem("authenticated") !== "true") {
+            window.location.href = "password.html";
+        }
+    </script>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <div class="container">
+            <h1>Our Love Story 💕</h1>
+
+            <div class="timers">
+                <div class="timer-box">
+                    <h3>Time Until Our Anniversary</h3>
+                    <p id="anniversary-timer"></p>
+                </div>
+                <div class="timer-box">
+                    <h3>Time We've Been Together</h3>
+                    <p id="relationship-timer"></p>
+                </div>
+            </div>
+
+            <!-- Beautiful Thick White Separator -->
+            <div class="year-separator">
+                <h2>Year Two: WORK IN PROGRESS</h2>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .memories {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adds space between buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        if (sessionStorage.getItem("authenticated") !== "true") {
+            window.location.href = "password.html";
+        }
+    </script>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <div class="container">
+            <h1>Our Love Story 💕</h1>
+
+            <div class="timers">
+                <div class="timer-box">
+                    <h3>Time Until Our Anniversary</h3>
+                    <p id="anniversary-timer"></p>
+                </div>
+                <div class="timer-box">
+                    <h3>Time We've Been Together</h3>
+                    <p id="relationship-timer"></p>
+                </div>
+            </div>
+
+            <!-- Beautiful Thick White Separator -->
+            <div class="year-separator">
+                <h2>Year One ✨</h2>
+            </div>
+
+            <!-- Memory Sections -->
+            <div class="memories">
+                <button class="memory-button" onclick="openModal(0)">First Date</button>
+                <button class="memory-button" onclick="openModal(1)">Random Friend Hangout</button>
+                <button class="memory-button" onclick="openModal(2)">SADD Presentation</button>
+                <button class="memory-button" onclick="openModal(3)">My First Birthday With You</button>
+                <button class="memory-button" onclick="openModal(4)">SADD Trip to Six Flags</button>
+                <button class="memory-button" onclick="openModal(5)">Movie + Chick-Fil-A</button>
+                <button class="memory-button" onclick="openModal(6)">Keyport Part 1</button>
+                <button class="memory-button" onclick="openModal(7)">Keyport Part 2 (With Chicken Tenders)</button>
+                <button class="memory-button" onclick="openModal(8)">Your First Birthday With Me</button>
+                <button class="memory-button" onclick="openModal(9)">Independence Day 2024!!</button> <!--Maybe add video if i figure it out-->
+                <button class="memory-button" onclick="openModal(10)">Menlo Park Mall: Part ???</button>
+                <button class="memory-button" onclick="openModal(11)">County Fair</button>
+                <button class="memory-button" onclick="openModal(12)">Apple Picking with Friends</button>
+                <button class="memory-button" onclick="openModal(13)">Milestone 1: 6 Months Anniversary</button>
+                <button class="memory-button" onclick="openModal(14)">Keyport Part 3 (With Nachos and Goat Cheese)</button>
+                <button class="memory-button" onclick="openModal(15)">At the Library</button>
+                <button class="memory-button" onclick="openModal(16)">Meeting Elmer (I'm still jealous of him)</button>
+                <button class="memory-button" onclick="openModal(17)">My Horrible Planning at Monster Mini Golf</button>
+                <button class="memory-button" onclick="openModal(18)">Our First Halloween Together</button>
+                <button class="memory-button" onclick="openModal(19)">Keyport Part 4 (With Lego and Panera)</button>
+                <button class="memory-button" onclick="openModal(20)">Library Part 2</button>
+                <button class="memory-button" onclick="openModal(21)">Our First Christmas Together</button>
+                <button class="memory-button" onclick="openModal(22)">Seeing the Universe (even though I already see one everyday)</button>
+                <button class="memory-button" onclick="openModal(23)">Dylan's Birthday</button>
+                <button class="memory-button" onclick="openModal(24)">Danny's Birthday</button>
+                <button class="memory-button" onclick="openModal(25)">Library Part 3</button>
+                <button class="memory-button" onclick="openModal(26)">Seeing H-Mart for the First Time</button>
+                <button class="memory-button" onclick="openModal(27)">Drawing Elmer (Menlo Part ??)</button>
+                <button class="memory-button" onclick="openModal(28)">Valentine's Day 2024</button>
+                <button class="memory-button" onclick="openModal(29)">Milestone 2: 1 YEAR ANNIVERSARY</button>
+            </div>
+            <button class="back-button" onclick="goToPage('menu.html')">&#8592; Back to Menu</button>
+        </div>
+    </div>
+
+            <!-- Beautiful Thick White Separator -->
+            <div class="year-separator">
+                <h2>Year Two ✨</h2>
+            </div>
+
+    <!-- Modals for Each Memory -->
+    <div id="memory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="carousel">
+                <img src="" class="slide active">
+                <img src="" class="slide">
+                <img src="" class="slide">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <p id="memory-text">Our Special Moment 💖</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
